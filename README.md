@@ -25,7 +25,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 3.Open another terminal , Run `mongod` to open the mongodb server
 
   Note:Right now, you have three servers are running.
-       *Angular Development Server*
-       *Nodemon server*
-       *MongoDB server*
+  
+       Angular Development Server
+       Nodemon server
+       MongoDB server
 Remember all the three servers are running fine without any error otherwise, our application will not work.
