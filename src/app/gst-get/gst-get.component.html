@@ -1,0 +1,28 @@
+<input class="form-control" type="text" name="search" placeholder="Search" [(ngModel)]="filter">      
+      
+    <br>
+
+
+<table class="table table-bordered">
+    <thead style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:rgb(81, 81, 207)">
+       <tr>
+         <td> Owner </td>
+         <td> Company Name </td>
+         <td> GST number </td>
+         <td>Edit</td>
+         <td> Delete</td>
+       </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let business of businesses  | filter:filter">
+        <td>{{business.person_name}}</td>
+        <td>{{business.business_name}}</td>
+        <td>{{business.business_gst_number}}</td>
+        <td><a [routerLink]="['/business/edit',business._id]"  class="btn btn-primary"><i class="far fa-edit"></i></a></td>
+        <td><a (click) = "deleteBusiness(business._id)" class="btn btn-danger"><i class="far fa-trash-alt"></i></a></td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <button routerLink="/business/create" class="btn btn-primary"><i class="fas fa-plus"></i>Add new</button> &nbsp;
+  <button (click)="refresh()" class="btn btn-secondary"><i class="fas fa-sync-alt"></i></button>
