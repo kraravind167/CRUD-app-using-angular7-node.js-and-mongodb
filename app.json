@@ -1,0 +1,7 @@
+{
+  "name": "Angular 7 CRUD app",
+  "description": "CRUD-app-using-angular7-node.js-and-mongodb",
+  "repository": "https://github.com/heroku/button-sample",
+  "logo": "https://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static", "angular", "mongodb"]
+}
