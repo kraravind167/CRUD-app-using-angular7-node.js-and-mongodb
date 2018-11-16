@@ -30,3 +30,5 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
        Nodemon server
        MongoDB server
 Remember all the three servers are running fine without any error otherwise, our application will not work.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
